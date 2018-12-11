@@ -6,10 +6,9 @@
 <input
   type="text"
   placeholder="Enter your answer here"
-  onChange="if(this.input.value === '3'){ alert('Correct!'); }" />
+  onChange="if(this.value === '2'){ alert('Correct!'); }" />
 <script>
  setTimeout(function(){ throw new Error("This is a custom error") }, 0);
- setTimeout(function(){ var val = 12 / 0; }, 0);
  setTimeout(function(){ eval('this isn\'t code'); }, 0);
 </script>
 </body>
