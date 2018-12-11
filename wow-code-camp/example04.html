@@ -1,0 +1,75 @@
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+<style>
+* {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #eee;
+}
+
+body {
+  background: #353a40;
+}
+
+p {
+  width: 50%;
+  margin: 10px auto;
+}
+
+.popup-scrim{
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: #00000090;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-container{
+  background: #353a40;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+}
+
+.hidden {
+  display: none;
+}
+</style>
+</head>
+<body>
+<h1>Hey isn't this some really cool content?</h1>
+<p>I bet you're super interested in it and don't want anything to block it for you.</p>
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt vestibulum pulvinar. Aliquam tempus urna ac neque vulputate, ac ultricies neque pharetra. Etiam lacinia nibh in malesuada interdum. Praesent ultricies lobortis suscipit. Aenean eget tempus mi. Nam eu neque tellus. Etiam vel lectus arcu.
+</p><p>
+Vivamus tellus ligula, semper vel ex eget, posuere mattis sem. Aliquam facilisis turpis nec venenatis rhoncus. Duis ac rhoncus nisi, quis feugiat arcu. Sed posuere pellentesque mollis. Pellentesque tincidunt odio lacus, vitae porttitor augue fringilla in. Aliquam sit amet consectetur eros. Suspendisse semper bibendum mi, et consectetur dui euismod ut. Curabitur eu orci luctus, congue eros a, tempus elit. Fusce efficitur facilisis urna, ac eleifend ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis tellus imperdiet, convallis massa nec, finibus ante. Cras ac urna in diam luctus dictum.
+</p><p>
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur facilisis eu odio et volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse scelerisque enim sed feugiat scelerisque. Mauris mattis, turpis nec consectetur interdum, urna tortor interdum justo, et molestie elit neque vel tellus. Aenean vel risus sit amet augue tristique condimentum. Phasellus eu aliquam tellus. Maecenas sed accumsan turpis. In commodo varius sagittis. Nulla facilisi. Fusce mollis nunc id mi condimentum imperdiet.
+</p><p>
+Phasellus tristique condimentum ipsum, eu lobortis arcu suscipit sit amet. In ante tellus, fermentum non est sed, condimentum pretium arcu. Aliquam efficitur hendrerit mauris vel ultrices. Ut porta lectus ornare metus lobortis bibendum. Fusce bibendum congue metus, in accumsan sem semper quis. Suspendisse sit amet sollicitudin elit, a euismod erat. Praesent pharetra orci id quam volutpat venenatis. Phasellus tincidunt pretium feugiat. Nam ac libero et tortor luctus rutrum id vitae risus.
+</p><p>
+In at consectetur elit, ultricies aliquet enim. In hac habitasse platea dictumst. Mauris a leo sed metus pulvinar cursus. Cras interdum mattis nisi, non volutpat tortor maximus bibendum. Mauris posuere purus turpis, vel fringilla elit consequat nec. Aliquam sagittis placerat leo. In nisi nunc, bibendum quis imperdiet in, molestie sed ante. Proin sem tortor, mollis vitae sapien ut, eleifend bibendum odio. Fusce quis lorem fringilla, dapibus dolor sit amet, viverra diam. Donec convallis semper sapien lobortis euismod. Duis sollicitudin metus non nunc ultricies, dapibus gravida risus semper.
+</p>
+
+<div class="popup-scrim hidden" id="popup">
+  <div class="popup-container">
+    <h1>Hey forget all that content...</h1>
+    <h2>Wanna sign up for my newsletter!?!?!?</h2>
+  </div>
+</div>
+<script>
+setTimeout(
+  function(){
+    document.getElementById('popup').className = 'popup-scrim';
+  }
+, 2000);
+</script>
+</body>
+</html>
